@@ -1,141 +1,103 @@
 
-<!DOCTYPE Html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-<title>My first website</title>
-<link rel="stylesheet" href="style.css">
-
-<style>
-body{
-  background-color: #f0f8ff;
-  font-display: aerial, san-serif;
-  test text-align: center;
-}
-
-h1{
-  color: #ff4500;
-}
-
-p{
-  color:#333333;
-  font size: 18px;
-}
-
-img{
-   border-radius: 15px /*rounded corners*/;
-   margin: 20px 0;
-}
-
-button{
-  <button>Learn More</button>
-  background-color: #4CAF50; /* green button */
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #45a049; /* dark green on hover */
-}
-</style>
-
-<head>
-  <style>
-body{
-    margin:0;
-    font-family: Arial, sans-serif;
-}
-
-/* Hero Section */
-.hero{
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-.hero h1{
-    font-size: 48px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 5px black;
-}
-
-.hero p{
-    font-size: 20px;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 3px black;
-}
-
-.btn{
-    background: orange;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn:hover{
-    background: darkorange;
-}
-</style>
-  <style>
-
-body{
-    margin:0;
-    font-family:Arial;
-}
-
-.navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:#222;
-    padding:15px 30px;
-}
-
-.logo{
-    color:white;
-    font-size:22px;
-    font-weight:bold;
-}
-
-.menu a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-    font-size:18px;
-}
-
-.menu a:hover{
-    color:orange;
-}
-
-</style>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | My Website</title>
+<h1>Build Your Online Presence</h1>      <p>I create simple, beautiful websites for individuals and small businesses.</p>
+<a href="contact.html" class="btn">Hire Me</a>
+<link rel="stylesheet" href="Style.css">
+</head>
 <body>
-  <!-- Hero Section -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>Welcome to My Website</h1>
-    <p>Learning web development and creating amazing websites.</p>
-    <a href="about.html" class="btn">Learn More About Me</a>
-  </div>
-</section>
-  <nav class="navbar">
-    <div class="logo">MyWebsite</div>
-    <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </div>
+
+<nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
 </nav>
+
+<section class="scroll-section">
+    <h1>Welcome to My Website</h1>
+    <p>Explore my projects, learn more about me, and feel free to get in touch!</p>
+    <button class="btn" onclick="window.location.href='About.html'">Learn More</button>
+</section>
+<section class="scroll-section">
+    <h2>Highlights</h2>
+    <section class="hero">
+  <h1>Emmanuel Web Solutions</h1>
+  <p>I help individuals and small businesses build professional websites.</p>
+  <a href="contact.html" class="btn">Get Your Website</a>
+</section>
+<section class="services">
+  <h2>My Services</h2>
+
+  <div class="service-box">
+    <h3>Basic Website</h3>
+    <p>Simple 3-page website (Home, About, Contact)</p>
+  <div class="hero">
+    <h1>I Build Websites for Businesses</h1>
+    <p>Affordable, fast and mobile-friendly websites</p>
+    <a href="contact.html" class="btn">Hire Me</a>
+
+<div class="hero fade-in">
+    <h1>I Build Websites for Businesses</h1>
+    <p>Affordable, fast and mobile-friendly</p>
+    <a href="contact.html" class="btn">Hire Me</a>
+</div>
+
+<div class="container fade-in">
+    <div class="card">
+        <h2>Starter Website</h2>
+        <p>Ksh 2,000</p>
+    </div>
+
+    <div class="card">
+        <h2>Business Website</h2>
+        <p>Ksh 5,000</p>
+    </div>
+
+    <div class="card">
+        <h2>Premium Website</h2>
+        <p>Ksh 10,000</p>
+    </div>
+</div>
+<h2 style="text-align:center;">Why Choose Me?</h2>
+
+<div class="container">
+    <div class="card">
+        <p>✔ Affordable Prices</p>
+    </div>
+    <div class="card">
+        <p>✔ Fast Delivery</p>
+    </div>
+    <div class="card">
+        <p>✔ Mobile Friendly</p>
+    </div>
+</div>
+</section>
+    <img src="Son.jpg" alt="Son.jpg">
+</section>
+
+<footer>
+    <p>&copy; 2026 My Website. All rights reserved.</p>
+</footer>
+
+<script>
+const sections = document.querySelectorAll('.scroll-section');
+function revealSections() {
+    const triggerBottom = window.innerHeight * 0.85;
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if(sectionTop < triggerBottom) section.classList.add('visible');
+    });
+}
+window.addEventListener('scroll', revealSections);
+window.addEventListener('load', revealSections);
+</script>
+<footer>
+  <p>© 2026 My Website | Built by Emmanuel</p>
+</footer>
+
 </body>
+</html>

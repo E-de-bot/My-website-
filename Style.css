@@ -1,0 +1,354 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    background: #1e3a8a;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #3b82f6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h1 { color: #1e3a8a; font-size: 2.8em; }
+h2 { color: #333; font-size: 2em; }
+h3 { color:#333;font-size: 2em;}
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Buttons */
+button, .btn {
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover, .btn:hover {
+    background-color: #3b82f6;
+    transform: scale(1.05);
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+    background: #1e3a8a;
+    color: #fff;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+/* Smooth Scroll */
+html { scroll-behavior: smooth; }
+
+/* Scroll Animation */
+.scroll-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+footer p{
+    margin:0;
+    font-size:16px;
+}
+Css id="socialcss">
+Copy code
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* General page setup for sticky footer */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Main content grows */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Navbar styling */
+nav {
+    background: #333;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Footer 3-column layout */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+.hero, .contact, footer {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+Copy code
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+}
+
+/* Navbar */
+nav{
+    background:#222;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:15px;
+    text-decoration:none;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#00bcd4;
+}
+
+/* Hero Section */
+.hero{
+    background:linear-gradient(135deg, #00bcd4, #2196f3);
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:20px;
+    opacity:0.9;
+}
+
+/* Cards */
+.container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+Copy code
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    width:300px;
+    text-align:center;
+    transition:all 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+@media(max-width:768px){
+    .container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+}
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:white;
+    color:#2196f3;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#222;
+    color:white;
+}
+.fade-in{
+    opacity:0;
+    transform:translateY(20px);
+    animation:fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:40px 20px;
+    flex-wrap:wrap;
+}
+form{
+    max-width:500px;
+    margin:20px auto;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    background:#2196f3;
+    color:white;
+    border-radius:30px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#00bcd4;
+}
